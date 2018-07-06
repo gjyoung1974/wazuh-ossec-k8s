@@ -1,7 +1,7 @@
+---
 #######################################################################
-# Kubernetes Deployment for the Wazuh Logstash container
+# Wazuh Logstash container
 #######################################################################
-
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
@@ -38,3 +38,4 @@ spec:
               value: 'false'
           ports:
             - containerPort: 5000
+---

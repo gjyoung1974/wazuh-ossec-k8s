@@ -1,8 +1,7 @@
+---
 #######################################################################
-# ConfigMap to easily change values in the ossec.conf file without
-# having to create a custom Docker image
+# ConfigMap: for ossec.conf file
 #######################################################################
-
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -272,3 +271,4 @@ data:
         <location>/var/log/dpkg.log</location>
       </localfile>
     </ossec_config>
+---

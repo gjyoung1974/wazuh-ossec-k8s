@@ -1,7 +1,7 @@
+---
 #######################################################################
 # Kubernetes Deployment for Wazuh Kibana container
 #######################################################################
-
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
@@ -37,3 +37,4 @@ spec:
           env:
             - name: NODE_OPTIONS
               value: '--max-old-space-size=3072'
+---

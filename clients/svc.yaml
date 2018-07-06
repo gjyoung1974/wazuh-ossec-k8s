@@ -1,7 +1,4 @@
-#######################################################################
-# Headless service for the wazuh-manager-client StatefulSet
-#######################################################################
-
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -17,3 +14,4 @@ spec:
   clusterIP: None
   selector:
     wazuh-manager-role: client
+---

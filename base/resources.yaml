@@ -1,3 +1,9 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: wazuh
+---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -7,3 +13,4 @@ parameters:
   encrypted: 'true'
   type: gp2
 reclaimPolicy: Retain  # Useful in case you delete the PersistentVolumeClaim
+---

@@ -1,14 +1,8 @@
+---
 #######################################################################
-# Kubernetes StatefulSet for Wazuh manager clients nodes
-#
-# We deploy two replicas here and we set a Pod anti-affinity policy to
-# make sure the master and clients are not all running on the same
-# Kubernetes node.
-#
-# To scale up this deployment, you must update the master ossec.conf
-# first to tel the master another node will be part of the cluster.
+# We create two replicas here and we set a Pod anti-affinity policy to
+# make sure the master and clients are not all running on the same node
 #######################################################################
-
 apiVersion: apps/v1beta2
 kind: StatefulSet
 metadata:
@@ -80,3 +74,4 @@ spec:
         resources:
           requests:
             storage: 10Gi
+---

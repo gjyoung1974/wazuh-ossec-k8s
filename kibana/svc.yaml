@@ -1,8 +1,7 @@
+---
 #######################################################################
-# Service to expose Wazuh Kibana container inside the Kubernetes
-# cluster
+# Expose Wazuh Kibana container inside the cluster
 #######################################################################
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -17,11 +16,10 @@ spec:
     - name: kibana
       port: 5601
       targetPort: 5601
-
+      
 #######################################################################
-# Service to expose Wazuh Kibana nginx proxy inside the VPC
+# Expose Wazuh Kibana nginx proxy inside the VPC
 #######################################################################
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -44,3 +42,4 @@ spec:
     - name: web-http
       port: 80
       targetPort: 8
+---

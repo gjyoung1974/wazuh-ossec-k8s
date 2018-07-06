@@ -1,7 +1,7 @@
+---
 #######################################################################
-# Headless service for the wazuh-elasticsearch StatefulSet
+# Expose the wazuh-elasticsearch StatefulSet
 #######################################################################
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -19,10 +19,8 @@ spec:
   clusterIP: None
 
 #######################################################################
-# Service to expose Elasticsearch container inside the Kubernetes
-# cluster
+# Expose Elasticsearch container inside the Kubernetes cluster
 #######################################################################
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -37,3 +35,4 @@ spec:
     - name: es-rest
       port: 9200
       targetPort: 9200
+---

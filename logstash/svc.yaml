@@ -1,8 +1,7 @@
+---
 #######################################################################
-# Service to expose Logstash to Wazuh managers inside the Kubernetes
-# cluster
+# Expose Logstash to Wazuh managers inside the cluster
 #######################################################################
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -17,3 +16,4 @@ spec:
     - name: beats
       port: 5000
       targetPort: 5000
+--
