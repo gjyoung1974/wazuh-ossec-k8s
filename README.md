@@ -22,16 +22,14 @@ This deployment leverages  the Docker images from:
 This repository does not show how to deploy the Wazuh agent in a Kubernetes cluster. Normally, we would use a DaemonSet to deploy the agent on each Kubernetes node. To do that, we would need a Docker image with the Wazuh agent installed on it and then we would need to mount almost every folder of your host inside that container (`/bin`, `/etc`, `/var/log`, etc.). It would be a very complicated task since you cannot simply mount the `/bin` folder of your host in the `/bin` folder of your container. Therefore, creating such Docker image and using it in a Kubernetes DaemonSet is not the ideal way to deploy a Wazuh agent. Instead, you should take a look at the [Wazuh Ansible playbooks project](https://github.com/wazuh/wazuh-ansible) or at the [Wazuh Puppet module project](https://github.com/wazuh/wazuh-puppet) to deploy your Wazuh agents.
 
 ## TODO
-* Secure the Wazuh API.
-* Use an enterprise class Elasticsearch cluster instead of a single node. The [kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster) repository looks like a great place from where to start.
-<<<<<<< HEAD
-* Make the Logstash deployment highly available.
-* Make the Kibana deployment highly available.
+* Secure the Wazuh API: Harden + integrate SSO
+* In production: use an enterprise class ELK cluster instead of a single node.
 
 ```
 2018 Gordon Young gjyoung1974@gmail.com
 ```
-=======
+
+`//TODO`
 * Use EFK vs Logstash    
 * Make the Kibana deployment highly available.    
->>>>>>> 226e5e8c618b961e425d99d50b0e812334bb908e
+===
