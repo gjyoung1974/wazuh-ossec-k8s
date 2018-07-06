@@ -24,9 +24,14 @@ This repository does not show how to deploy the Wazuh agent in a Kubernetes clus
 ## TODO
 * Secure the Wazuh API.
 * Use an enterprise class Elasticsearch cluster instead of a single node. The [kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster) repository looks like a great place from where to start.
+<<<<<<< HEAD
 * Make the Logstash deployment highly available.
 * Make the Kibana deployment highly available.
 
 ```
 2018 Gordon Young gjyoung1974@gmail.com
 ```
+=======
+* Use EFK vs Logstash    
+* Make the Kibana deployment highly available.    
+>>>>>>> 226e5e8c618b961e425d99d50b0e812334bb908e
