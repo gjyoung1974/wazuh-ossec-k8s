@@ -1,0 +1,17 @@
+name: wazzuh
+version: 3.2.0_6.2.1
+appVersion: 1.0
+description: Open Source Host and Endpoint Security
+keywords:
+- SIEM
+- Alerts
+- HIDS
+- NIDS
+- OSSEC
+- PCI
+home: https://wazuh.com
+sources:
+- https://github.com/wazuh/wazuh
+maintainers:
+- name: gjyoung1974@gmail.com
+engine: gotpl
