@@ -32,5 +32,6 @@ This repository does not show how to deploy the Wazuh agent in a Kubernetes clus
 `//TODO`
 * Use EFK vs Logstash    
 * Make the Kibana deployment highly available.    
+* Provide a host DaemonSet example for coverage of the k8s nodes
 ===
 
