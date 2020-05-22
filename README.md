@@ -1,5 +1,6 @@
 # wazuh-kubernetes
 Wazuh OSSEC for Kubernetes with a embedded ELK stack.
+https://documentation.wazuh.com/3.9/deploying-with-kubernetes/kubernetes-conf.html
 
 ## Abstract
 Wazuh best practices recommend deploying multiple instances of the Wazuh manager so it can support a larger amount of events and can be fault tolerant.
