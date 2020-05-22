@@ -2,8 +2,6 @@
 Wazuh OSSEC for Kubernetes with a embedded ELK stack.
 https://documentation.wazuh.com/3.9/deploying-with-kubernetes/kubernetes-conf.html
 
-//TODO: make this a daemonset vs StatefulSet
-
 ## Abstract
 Wazuh best practices recommend deploying multiple instances of the Wazuh manager so it can support a larger amount of events and can be fault tolerant.
 * `Master` node - intended to expose the Wazuh API, manage agents registration
